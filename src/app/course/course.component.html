@@ -1,0 +1,38 @@
+<ion-content class="home-background" fullscreen="true">
+
+  <div class="top-container">
+   <img src="assets/profile.jpg" alt="Perfil" class="profile-pic" (click)="navigateToPerfil()" />
+   <ion-searchbar placeholder="Buscar..." class="search-bar"></ion-searchbar>
+ </div>
+
+  <h2>Para aprender algo nuevo</h2>
+
+  <div class="categories-container">
+   <div class="category" *ngFor="let category of categories" (click)="navigateToCurso()">
+     <img [src]="category.image" class="category-image" />
+     <span class="category-title">{{ category.name }}</span>
+   </div>
+ </div>
+
+</ion-content>
+
+<ion-footer>
+
+ <ion-toolbar class="bottom-nav">
+   <ion-button slot="start">
+     <ion-button>
+       <ion-icon name="home-outline"></ion-icon>
+     </ion-button>
+   </ion-button>
+   <ion-button slot="middle">
+     <ion-button>
+       <ion-icon name="book-outline"></ion-icon>
+     </ion-button>
+   </ion-button>
+   <ion-button slot="end">
+     <ion-button (click)="navigateToPerfil()">
+       <ion-icon name="person-outline"></ion-icon>
+     </ion-button>
+   </ion-button>
+ </ion-toolbar>
+</ion-footer>

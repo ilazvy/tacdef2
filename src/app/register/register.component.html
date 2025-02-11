@@ -1,0 +1,45 @@
+<ion-content class="register-background" fullscreen="true">
+  <ion-header>
+    <ion-toolbar>
+      <ion-icon slot="start" name="arrow-back-outline" (click)="redirectToHome()"></ion-icon>
+
+      <ion-title>Header Toolbar</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div class="register-container">
+    
+     <img src="assets/logo.png" alt="Viam Logo" class="logo" />
+
+     <h2>Registro</h2>
+
+     <form>
+      <ion-item>
+        <ion-label position="floating">Nombre de usuario</ion-label>
+        <ion-input type="text" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Nombre(s)</ion-label>
+        <ion-input type="text"  required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Apellidos</ion-label>
+        <ion-input type="text"  required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Correo electrónico</ion-label>
+        <ion-input type="email"  required></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input type="password" required></ion-input>
+      </ion-item>
+
+       <ion-button expand="full" class="custom-button">Registrarse</ion-button>
+    </form>
+
+  </div>
+</ion-content>

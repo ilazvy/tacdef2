@@ -1,3 +1,30 @@
-<p>
-  login works!
-</p>
+<ion-content class="login-background" fullscreen="true">
+  <div class="login-container">
+    
+     <ion-icon name="arrow-back-outline" class="back-button"></ion-icon>
+
+     <img src="assets/logo.png" alt="Viam Logo" class="logo" />
+
+     <h2>Login</h2>
+
+     <div class="icon-container">
+      <ion-icon name="lock-closed-outline" class="login-icon"></ion-icon>
+    </div>
+
+     <form>
+      <ion-item>
+        <ion-label position="floating">Correo electrónico</ion-label>
+        <ion-input type="email" placeholder="ejemplo@dominio.com" required></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input type="password" placeholder="Contraseña" required></ion-input>
+      </ion-item>
+
+       <ion-button expand="full" class="custom-button">Iniciar sesión</ion-button>
+
+    </form>
+
+  </div>
+</ion-content>
